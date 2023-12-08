@@ -1,4 +1,4 @@
-import pyinputplus as pyip
+import pyinputplus as pypi
 
 def getBMI(hight:float,weight:float)->tuple[float,str]:
     bmi = weight / (hight/100)**2
@@ -24,10 +24,10 @@ def getBMI(hight:float,weight:float)->tuple[float,str]:
     return(bmi,message)
 
 
-while (True):
-    weight = pyip.inputFloat('請輸入體重,單位為(公斤):',min=0)
+while True:
+    weight = pypi.inputFloat('請輸入體重,單位為(公斤):',min=0)
     print(weight)
-    hight = pyip.inputFloat('請輸入身高,單位為(公分):',min=0)
+    hight = pypi.inputFloat('請輸入身高,單位為(公分):',min=0)
     print(hight)
 
     bmi,message =getBMI(hight=hight,weight=weight)
