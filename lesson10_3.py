@@ -2,6 +2,10 @@ import random
 import pyinputplus as pyip
 
 def getstudent()-> list[list]:
+    '''
+    參數:學生人數-> student_nums
+    參數:科目數 -> scores_nums
+    '''
     with open('names.txt',mode='r',encoding='utf-8') as file:
         names:str=file.read()
 
