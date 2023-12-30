@@ -1,7 +1,4 @@
-#可放function,變數
-
-import random,csv
-
+import csv
 
 def saveToCSV(fileName:str,data:list[list],subject_nums:int) -> bool:
     fileName += ".csv"

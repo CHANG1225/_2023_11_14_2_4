@@ -1,4 +1,5 @@
-import csv
+import random
+
 def getStudents(student_nums:int=1, scores_nums:int=2) -> list[list]:
     '''
     參數: student_nums -> 學生人數\n
